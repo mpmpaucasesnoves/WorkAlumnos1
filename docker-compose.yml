@@ -1,0 +1,16 @@
+services:
+  api-alumnos-1:
+    container_name: api_alumnos_1
+# Indica que debe construir la imagen utilizando el Dockerfile de la carpeta ac>
+    build: .
+# Nombre y etiqueta de la imagen que construir. Necesario para hacer el 'docker>
+    image: mpmpaucasesnoves/workalumnos1-api:v1.0
+    ports:
+      - 3010:3000
+    volumes:
+# Sincroniza la carpeta local ('.') con la carpeta '/app' del contenedor
+      - .:/app
+# Volumen an  nimo protector: Evita que la carpeta 'node_modules' del host
+# sobrescriba la carpeta 'node_modules' de  Alpine Linux dentro del contenedor.
+      - /app/node_modules
+    restart: unless-stopped

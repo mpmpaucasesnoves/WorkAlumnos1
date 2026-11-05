@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Marcos",
+        "surname": "Zurera",
+        "age": 21,
+        "grades": [7, 3, 10, 5]
+    },
+    {
+        "id": 2,
+        "name": "Juan",
+        "surname": "Capó",
+        "age": 19,
+        "grades": [10, 7, 9, 8]
+    },
+    {
+        "id": 3,
+        "name": "Biel",
+        "surname": "Ferrer",
+        "age": 21,
+        "grades": [4, 7, 8, 5]
+    },
+    {
+        "id": 4,
+        "name": "Arnau",
+        "surname": "García",
+        "age": 22,
+        "grades": [5, 4, 7, 5]
+    }
+]
